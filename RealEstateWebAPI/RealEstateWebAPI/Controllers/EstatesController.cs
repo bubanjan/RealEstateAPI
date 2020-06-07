@@ -66,9 +66,7 @@ namespace RealEstateWebAPI.Controllers
         }
 
         // PUT: api/Estates/5
-        // edit estate 
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        // edit estate       
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEstate(int id, Estate estate)
         {
@@ -103,8 +101,6 @@ namespace RealEstateWebAPI.Controllers
 
         // POST: api/Estates
         // create new estate
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
         public async Task<IActionResult> PostEstate([FromBody] Estate estate)
         {
